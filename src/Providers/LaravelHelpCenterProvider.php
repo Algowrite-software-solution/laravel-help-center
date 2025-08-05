@@ -34,9 +34,22 @@ class LaravelHelpCenterProvider extends ServiceProvider
                 __DIR__ . '/../../database/migrations/' => database_path('migrations'),
             ], 'laravel-help-center-migrations');
 
+
+            $this->publishes([
+                // Controller
+                __DIR__ . '/../../src/Http/Controllers/LaravelHelpCenterController.php' => app_path('Http/Controllers/Vendor/LaravelHelpCenter/LaravelHelpCenterController.php'),
+
+                // Model
+                __DIR__ . '/../../src/Models/LaravelHelpCenterModel.php' => app_path('Models/Vendor/LaravelHelpCenter/LaravelHelpCenterModel.php'),
+
+                // Middleware
+                __DIR__ . '/../../src/Http/Middleware/LaravelHelpCenterMiddleware.php' => app_path('Http/Middleware/Vendor/LaravelHelpCenter/LaravelHelpCenterMiddleware.php'),
+
+            ], 'laravel-help-center-code');
+
         }
 
-        
+
         $router = $this->app->make(\Illuminate\Routing\Router::class);
         $router->aliasMiddleware('laravel-help-center-middleware', \Algowrite\LaravelHelpCenter\Http\Middleware\LaravelHelpCenterMiddleware::class);
     }
