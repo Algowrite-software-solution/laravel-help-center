@@ -1,10 +1,9 @@
 <?php
 
-namespace YourVendor\TestPackage\Database\Seeders;
+namespace Algowrite\TestPackage\Database\Seeders;
 
 use Algowrite\LaravelHelpCenter\Models\LaravelHelpCenterModel;
 use Illuminate\Database\Seeder;
-use YourVendor\TestPackage\Models\TestModel;
 
 class LaravelHelpCenterSeeder extends Seeder
 {
