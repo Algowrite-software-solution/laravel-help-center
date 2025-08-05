@@ -34,10 +34,6 @@ class LaravelHelpCenterProvider extends ServiceProvider
                 __DIR__ . '/../../database/migrations/' => database_path('migrations'),
             ], 'laravel-help-center-migrations');
 
-
-            $this->publishes([
-                __DIR__ . '/../../database/seeders' => database_path('seeders'),
-            ], 'laravel-help-center-seeders');
         }
 
         
