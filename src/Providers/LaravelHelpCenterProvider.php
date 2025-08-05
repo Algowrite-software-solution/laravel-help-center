@@ -40,7 +40,7 @@ class LaravelHelpCenterProvider extends ServiceProvider
             ], 'laravel-help-center-seeders');
         }
 
-        // In TestPackageServiceProvider.php boot() method
+        
         $router = $this->app->make(\Illuminate\Routing\Router::class);
         $router->aliasMiddleware('laravel-help-center-middleware', \Algowrite\LaravelHelpCenter\Http\Middleware\LaravelHelpCenterMiddleware::class);
     }

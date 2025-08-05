@@ -22,6 +22,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('test_models');
+        Schema::dropIfExists('laravel_help_center_models');
     }
 };

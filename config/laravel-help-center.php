@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'message' => 'Hello from the Test Package!',
+    'message' => 'Hello from the Laravel Help Center Package!',
 ];

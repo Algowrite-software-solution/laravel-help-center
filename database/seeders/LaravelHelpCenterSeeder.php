@@ -1,6 +1,6 @@
 <?php
 
-namespace Algowrite\TestPackage\Database\Seeders;
+namespace Algowrite\LaravelHelpCenter\Database\Seeders;
 
 use Algowrite\LaravelHelpCenter\Models\LaravelHelpCenterModel;
 use Illuminate\Database\Seeder;
