@@ -37,13 +37,13 @@ class LaravelHelpCenterProvider extends ServiceProvider
 
             $this->publishes([
                 // Controller
-                __DIR__ . '/../../src/Http/Controllers/LaravelHelpCenterController.php' => app_path('Http/Controllers/LaravelHelpCenter/LaravelHelpCenterController.php'),
+                __DIR__ . '/../../src/Http/Controllers/LaravelHelpCenterController.php' => app_path('Http/Controllers/LaravelHelpCenterController.php'),
 
                 // Model
-                __DIR__ . '/../../src/Models/LaravelHelpCenterModel.php' => app_path('Models/LaravelHelpCenter/LaravelHelpCenterModel.php'),
+                __DIR__ . '/../../src/Models/LaravelHelpCenterModel.php' => app_path('Models/LaravelHelpCenterModel.php'),
 
                 // Middleware
-                __DIR__ . '/../../src/Http/Middleware/LaravelHelpCenterMiddleware.php' => app_path('Http/Middleware/LaravelHelpCenter/LaravelHelpCenterMiddleware.php'),
+                __DIR__ . '/../../src/Http/Middleware/LaravelHelpCenterMiddleware.php' => app_path('Http/Middleware/LaravelHelpCenterMiddleware.php'),
 
             ], 'laravel-help-center-code');
 
